@@ -1,0 +1,53 @@
+//Style of each column in the tableView
+.table-view .table-column{
+    -fx-alignment:center;
+}
+
+ //Style of each table cell
+.table-view .table-cell{
+    -fx-font-size:10px;           //the font size you asked in the comments below  
+}
+
+.table-row-cell {
+    -fx-cell-size: 20px;
+}
+
+//FIRST COLUMN BOLD AND CENTER-LEFT
+.table-view .table-cell.first {
+    -fx-font-weight:bold;
+    -fx-alignment:center-left;
+}
+
+.table-view .table-cell.my-special-column-style {
+  -fx-font-family: monospace;
+  -fx-alignment:center-left;
+  -fx-font-weight:bold;
+  -fx-font-size:12px;
+}
+
+
+ //Style of each table cell
+.column-header {
+    -fx-font-size:10px;           //the font size you asked in the comments below
+    -fx-pref-height:15px;
+}
+
+.my-special-column-style .label {
+  -fx-font-family: sans-serif;
+  -fx-alignment: center-left;
+  -fx-font-weight:bold;
+  -fx-font-size:12px;
+}
+
+
+
+
+//Style of each entire row in the table view when is hovered
+/*.table-row-cell:hover {
+    -fx-background-color:orange;
+}*/
+
+//Style of each entire row in the table view when is getting focused
+/*.table-row-cell:focused {
+    -fx-background-color:lightgreen;
+}*/

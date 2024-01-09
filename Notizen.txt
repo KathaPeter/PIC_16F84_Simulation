@@ -1,0 +1,36 @@
+Interrupts Seite 17, 48 (Skizze)
+
+- TMR0:      T0IE, T0IF
+- RB0:       INTE, INTF
+- RB7-4 Change: RBIE, RBIF   ? p.16
+
+- EEWRITECOMPLETE: EEIE
+
+
+
+EEPROM SIZE 64 BYTE
+
+I/O PINS 13
+- RB0       INTE, INTF  (PORTB)
+- RB1:RB7 	normal		(PORTB)
+- RA0:RA3 	normal		(PORTA)
+- RA4 		T0CKI		(PORTA)
+
+
+MCLR (Master Clear Reset, active low [0 = reset])
+
+EECON2 55h, AAh p.34
+
+p. 14 -> The TO and PD status bits in the STATUS register are not affected by a MCLR reset.
+
+Reset: 
+-Power on
+-MCLR -> wird unterschieden in SLEEP oder ~SLEEP
+-WTDT reset -> SLEEP oder ~SLEEP
+
+
+//WR EEPROM
+WR = 1
+
+TEST SEQUENZ (55h AAh)
+TEST WREN
